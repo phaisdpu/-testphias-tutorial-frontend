@@ -19,4 +19,3 @@ COPY ./entrypoint.sh /entrypoint.sh
 # Grant Linux permissions and run entrypoint script
 RUN chmod +x /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
-```
