@@ -94,7 +94,7 @@ jobs:
     name: Build
     runs-on: ubuntu-latest
     environment: 
-      name: env
+      name: dev
       url: https://github.com/phaisdpu/testphias-tutorial-pipeline/actions/workflows/dev-tutorial-backend-deploy.yml
     needs: [unitest,analyze] # if on env sit don't use
       
@@ -127,4 +127,3 @@ jobs:
         event-type: testphias-tutorial-backend-cd-dev
         client-payload: '{"ref": "${{ github.ref }}", "sha": "${{ github.sha }}"}'
 
-        
